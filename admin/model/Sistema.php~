@@ -1,0 +1,34 @@
+<?php
+require_once 'Main.php';
+class Sistema extends Main
+{
+   function index($query , $p ) 
+    {
+        //Code
+    }
+
+    function menu()
+    {
+        if($_SESSION['idtipousuario']==0){echo "no me rompazz!!";}
+        else {        
+        $menu[0] = array('texto'=>'Mantenimiento','url'=>'javascript:','enlaces'=>array());
+        $menu[1] = array('texto'=>'Tipo Noticia','url'=>'index.php?controller=Tipo_Noticia','enlaces'=>array());
+		  $menu[2] = array('texto'=>'Noticias','url'=>'index.php?controller=Noticia','enlaces'=>array());
+        
+		/*$menu[3] = array('texto'=>'Videos','url'=>'cartelera-videos.php','enlaces'=>array());*/
+        
+        $menu[0]['enlaces'][0] = array('idmodulo'=>'id1','texto'=>'Comentarios','url'=>'index.php?controller=comentario');
+        $menu[0]['enlaces'][1] = array('idmodulo'=>'id2','texto'=>'Edicion Impresa','url'=>'index.php?controller=edicion_impresa');
+        $menu[0]['enlaces'][2] = array('idmodulo'=>'id3','texto'=>'Chica Semana','url'=>'index.php?controller=chica_semana');
+        if($_SESSION['idtipousuario']==1){
+        $menu[0]['enlaces'][3] = array('idmodulo'=>'id4','texto'=>'Tipo usuario','url'=>'index.php?controller=Tipo_Usuario');        
+        $menu[0]['enlaces'][4] = array('idmodulo'=>'id5','texto'=>'Usuarios','url'=>'index.php?controller=usuario');
+        }
+		  $menu[0]['enlaces'][5] = array('idmodulo'=>'id6','texto'=>'Clientes','url'=>'index.php?controller=cliente');
+		  $menu[0]['enlaces'][6] = array('idmodulo'=>'id7','texto'=>'Dia como hoy','url'=>'index.php?controller=diahoy');
+		  $menu[0]['enlaces'][7] = array('idmodulo'=>'id8','texto'=>'Youtube','url'=>'index.php?controller=youtube');
+        return $menu;
+        }
+   }
+}
+?>
