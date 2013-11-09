@@ -1,0 +1,77 @@
+#menu-sistema{
+   padding: 9px;
+   padding-top: 5px;
+   padding-bottom: 0;
+   text-align: center;
+   overflow: hidden;
+  border:1px solid #E1E1E1;
+   border-bottom: 1px solid #57962B;
+   background:#fff;
+   border-top: 2px solid #dadada;
+   }
+
+#menu-sistema ul, .submenu ul{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+#menu-sistema li{
+   margin: 0;
+   margin-top: 3px;
+   margin-left: 1px;
+   padding: 5px 20px 5px 10px;
+   float: left;
+   background: #ffffff;
+   border-top: 1px solid #46872D;
+   border-left: 1px solid #46872D;
+   border-right: 1px solid #46872D;
+   
+   
+}
+#menu-sistema li:hover { background-color:#7ABCBC;}
+#menu-sistema li a {
+   font-family: arial;
+   font-size: 10px;
+   color:#000;
+   text-decoration: none;   
+   font-weight: bold;
+   text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+#menu-sistema li a:hover { color:#FFF;}
+.submenu{
+   display: none;
+   position: absolute;
+   padding-left: 1px;
+   padding-right: 1px;
+   background: #ffffff;
+   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+   border-top: 0;
+   
+}
+.submenu li{
+   padding: 7px 10px;
+   margin: 0px 0;
+   width: 170px;
+   height: 10px;
+   
+}
+
+.submenu li:hover {
+   background:#7ABCBC;
+}
+
+.submenu li:hover > a { color:#fff;
+                       }
+.submenu li a {
+   font-family: arial;
+   font-size: 10px;
+   color:#000;
+   text-decoration: none;
+   padding-top:5px;
+   padding-bottom: 5px;
+   padding-right:20%;
+text-shadow: 0 -1px 1px rgba(0,0,0,0.45);
+    }
+
+.submenu li a:hover { color: #fff;}

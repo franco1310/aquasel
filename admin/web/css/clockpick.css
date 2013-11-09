@@ -1,0 +1,48 @@
+/* CSS Document */
+
+#CP_hourcont {
+padding: 0px;
+position:absolute;
+border:1px dashed #ffffff;
+background-color:#669933;
+display:none;
+}
+
+#CP_minutecont {
+background-color:#fff;
+padding: 0px;
+position:absolute;
+width:45px;
+border: 1px dashed #cccccc;
+display:none;
+}
+
+.floatleft {
+float:left;
+}
+
+.CP_hour {
+padding:1px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:9px;
+white-space:nowrap;
+cursor:pointer;
+width:35px;
+margin:1px;
+background-color:#666666;
+}
+
+.CP_minute {
+padding:1px;
+background-color:#666666;
+font-family: Arial, Helvetica, sans-serif;
+font-size:9px;
+white-space:nowrap;
+cursor:pointer;
+width:auto;
+margin:1px;
+}
+
+.CP_over {
+background-color:#ffffff;
+}
